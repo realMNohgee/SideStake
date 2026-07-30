@@ -5,14 +5,14 @@ export default function HowItWorks() {
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold mb-2">📖 How It Works</h2>
-        <p className="text-zinc-400 mb-10">Two people, one bet, zero middlemen. Here&apos;s how SideStake works from start to finish.</p>
+        <p className="text-zinc-400 mb-10">Two people, one bet, zero middlemen. Here's how SideStake works from start to finish.</p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {[
             { icon: "📝", title: "Create a Bet", desc: "You have a take. Pick a side (YES or NO), stake USDC from your wallet, choose how it gets resolved, and set an expiry. Your stake locks in a smart contract — SideStake never touches your funds." },
             { icon: "🤝", title: "Get Matched", desc: "Your bet goes live in the Open Offers feed. Someone who disagrees takes the opposite side. Both stakes lock. Position tokens are minted — each of you gets a tradeable token representing your side of the bet." },
-            { icon: "📊", title: "Trade Positions", desc: "Don&apos;t want to wait for expiry? Your position token can be sold anytime. Lock in profits early or cut losses. Buy someone else&apos;s position to enter an existing bet. The token&apos;s market price reflects what people think will happen." },
-            { icon: "🔮", title: "Resolution", desc: "When the bet expires, the oracle both parties agreed on reports the outcome. Winners claim automatically. Losers&apos; tokens expire. SideStake never decides who wins — and never can." },
+            { icon: "📊", title: "Trade Positions", desc: "Don't want to wait for expiry? Your position token can be sold anytime. Lock in profits early or cut losses. Buy someone else's position to enter an existing bet. The token's market price reflects what people think will happen." },
+            { icon: "🔮", title: "Resolution", desc: "When the bet expires, the oracle both parties agreed on reports the outcome. Winners claim automatically. Losers' tokens expire. SideStake never decides who wins — and never can." },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="rounded-xl border border-zinc-800 bg-zinc-900 p-6">
               <div className="text-2xl mb-3">{icon}</div>

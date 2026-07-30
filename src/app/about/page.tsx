@@ -5,14 +5,14 @@ export default function About() {
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold mb-2">🏛 About SideStake</h2>
-        <p className="text-zinc-400 mb-10">A non-custodial P2P wager protocol. We&apos;re infrastructure, not a bookmaker — and the distinction matters.</p>
+        <p className="text-zinc-400 mb-10">A non-custodial P2P wager protocol. We're infrastructure, not a bookmaker — and the distinction matters.</p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {[
-            { icon: "🎯", title: "What We Actually Do", desc: "SideStake connects two people who want to bet against each other. That&apos;s it. We provide the smart contract escrow and the resolution payout mechanism. We don&apos;t create bets, we don&apos;t set odds, we don&apos;t aggregate opinions, and we don&apos;t decide who wins." },
-            { icon: "🛡️", title: "Non-Custodial", desc: "Your wallet, your keys, your funds. Smart contracts handle escrow. We never hold user funds. This is a structural commitment — not a policy choice. Even if we wanted to touch your money, we can&apos;t. The contracts don&apos;t allow it." },
+            { icon: "🎯", title: "What We Actually Do", desc: "SideStake connects two people who want to bet against each other. That's it. We provide the smart contract escrow and the resolution payout mechanism. We don't create bets, we don't set odds, we don't aggregate opinions, and we don't decide who wins." },
+            { icon: "🛡️", title: "Non-Custodial", desc: "Your wallet, your keys, your funds. Smart contracts handle escrow. We never hold user funds. This is a structural commitment — not a policy choice. Even if we wanted to touch your money, we can't. The contracts don't allow it." },
             { icon: "🔓", title: "Oracle-Resolved", desc: "Outcomes are determined by decentralized oracles (UMA, Chainlink) or mutually agreed sources — never by SideStake. The oracle is locked at bet creation and neither party can change it." },
-            { icon: "📈", title: "Tradeable Positions", desc: "Your bet becomes a token the moment it&apos;s matched. Sell it early, buy into existing bets, hedge your position. This isn&apos;t a bet slip you&apos;re stuck with until expiry — it&apos;s a liquid asset you control." },
+            { icon: "📈", title: "Tradeable Positions", desc: "Your bet becomes a token the moment it's matched. Sell it early, buy into existing bets, hedge your position. This isn't a bet slip you're stuck with until expiry — it's a liquid asset you control." },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="rounded-xl border border-zinc-800 bg-zinc-900 p-6">
               <div className="text-2xl mb-3">{icon}</div>
@@ -57,7 +57,7 @@ export default function About() {
         </p>
         <p className="text-zinc-400 mb-8">
           <strong>🌎 Available worldwide — including the United States.</strong> Our non-custodial architecture
-          means we&apos;re infrastructure, not an exchange. Users connect their own wallets, smart contracts handle
+          means we're infrastructure, not an exchange. Users connect their own wallets, smart contracts handle
           escrow, oracles resolve outcomes. We never hold funds, never set prices, never decide winners. This
           structural separation is what makes global availability possible without the regulatory overhead of
           custodial platforms like Kalshi or the geo-blocking of Polymarket.

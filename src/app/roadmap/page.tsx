@@ -51,14 +51,14 @@ export default function Roadmap() {
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold mb-2">🗺️ Roadmap</h2>
-        <p className="text-zinc-400 mb-10">What we&apos;re building and why. Subject to change as we learn from real users.</p>
+        <p className="text-zinc-400 mb-10">What we're building and why. Subject to change as we learn from real users.</p>
 
         <h3 className="text-xl font-semibold mb-6">🔐 Wallet Architecture (Phase 1 Foundation)</h3>
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {[
-            { icon: "🔑", title: "Connect Your Wallet", desc: "No email. No password. No KYC. Connect your existing wallet (Phantom, MetaMask, WalletConnect) and you&apos;re in. SideStake is a website that talks to the blockchain — we never see your private keys." },
+            { icon: "🔑", title: "Connect Your Wallet", desc: "No email. No password. No KYC. Connect your existing wallet (Phantom, MetaMask, WalletConnect) and you're in. SideStake is a website that talks to the blockchain — we never see your private keys." },
             { icon: "🏦", title: "Smart Contract Escrow", desc: "When you create or take a bet, USDC moves from your wallet directly into an audited smart contract. SideStake servers never touch it. The contract is the escrow agent — code, not people." },
-            { icon: "🔄", title: "How It Actually Flows", desc: "Your Wallet → Smart Contract (escrow) → Winner&apos;s Wallet. That&apos;s the entire path. Even if our servers go down, the contracts keep running. Your funds are always on-chain, always yours." },
+            { icon: "🔄", title: "How It Actually Flows", desc: "Your Wallet → Smart Contract (escrow) → Winner's Wallet. That's the entire path. Even if our servers go down, the contracts keep running. Your funds are always on-chain, always yours." },
             { icon: "💳", title: "Fiat On-Ramp (Later)", desc: "Phase 1 is crypto-only (USDC). Phase 2 adds MoonPay or similar — buy USDC with a credit card right in the app. No bank account needed." },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="rounded-xl border border-zinc-800 bg-zinc-900 p-6">
